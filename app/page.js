@@ -1,0 +1,287 @@
+"use client";
+import Image from "next/image";
+import { useState } from "react";
+
+export default function Home() {
+const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+  return (
+    <>
+      <header>
+            <a href="#" className="logo-holder">
+                <div className="logo">A</div>
+                <div className="logo-text">Anik's Portfolio Website</div>
+            </a>
+            <nav>
+                <ul id="menu" className={menuOpen ? "active" : ""}>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#skills">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#projects">Projects</a>
+                    </li>
+                    <li>
+                        <a href="mailto:anikde475@gmail.com" className="button">Contact Me</a> 
+                    </li>
+                </ul>
+                <a href="#" className="mobile-toogle" onclick={toggleMobileMenu}>
+                    <svg className="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
+                        height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h10" />
+                    </svg>
+
+                </a>
+            </nav>
+        </header>
+      <main>
+        <section className="hero container">
+          <div className="hero-blue">
+            <h1>
+              <small>Hello, I'm</small>
+              Anik De
+            </h1>
+            <p>
+              Master's student in Data Science at the University of Rochester with expertise in AI, deep learning, and data analysis.
+              <span>
+                Experienced in implementing Retrieval-Augmented Generation (RAG) pipelines, designing scalable architectures, and
+                integrating advanced LLMs like GPT-4 and Google Gemini.
+              </span>{" "}
+              Passionate about applying cutting-edge technologies to real-world problems, with a strong background in healthcare AI and
+              geospatial analysis.
+            </p>
+            <div className="call-to-action">
+              <a href="./onePageFinalsummer.pdf" className="button black">View Resume</a>
+              <a href="mailto:anikde475@gmail.com" className="button white">Contact Me</a>
+            </div>
+            <div className="Social-Links">
+              <a href="https://github.com/anik475">
+                <img src="./images/github.png" alt="Github" width="48px" />
+              </a>
+              <a href="https://www.linkedin.com/in/anikde/">
+                <img src="./images/linkedIn.png" alt="LinkedIn" width="30px" />
+              </a>
+            </div>
+          </div>
+          <div className="hero-yellow">
+            <img src="./images/anik.jpeg" alt="Anik De" width="150%" />
+          </div>
+        </section>
+        <section id="skills" className="skills container">
+          <h2>
+            <small>About Me</small>
+            Skills
+          </h2>
+          <div className="holder-blue">
+            <div className="left-column">
+              <h3>Data Analysis</h3>
+              <ul>
+                <li>Data Cleaning</li>
+                <li>Data Visualization</li>
+                <li>Statistical Analysis</li>
+                <li>Predictive Modeling</li>
+              </ul>
+              <h3>Machine Learning and Deep Learning</h3>
+              <ul>
+                <li>Supervised Learning</li>
+                <li>Unsupervised Learning</li>
+                <li>Neural Networks</li>
+                <li>Convolutional Neural Networks</li>
+                <li>Natural Language Processing</li>
+                <li>Large Language Models</li>
+                <li>Transformers</li>
+                <li>Image Segmentation Models</li>
+                <li>Image Classification Models</li>
+              </ul>
+            </div>
+            <div className="right-column">
+              <h3>A bit about me</h3>
+              <p>
+                I am Anik De, a dedicated Data Scientist currently pursuing my Master's degree in Data Science at the University of Rochester. My
+                journey in technology is driven by a passion for solving complex problems with data-driven insights. With a strong foundation in AI,
+                machine learning, and deep learning, I specialize in developing scalable architectures and innovative algorithms. My experience spans
+                multiple domains, including healthcare and geospatial analysis, where I've successfully applied my technical expertise to real-world
+                challenges. Notably, I've worked on enhancing AI-driven healthcare solutions and implementing sophisticated Retrieval-Augmented
+                Generation (RAG) systems, consistently delivering impactful results.
+              </p>
+              <p>
+                Beyond my technical skills, I am deeply committed to the ethical and innovative application of AI. I thrive in collaborative
+                environments, where I can work alongside multidisciplinary teams to push the boundaries of what's possible. I am always exploring the
+                latest advancements in AI, contributing to open-source projects, and sharing my knowledge with the community. My goal is to use
+                technology to create meaningful impact, and I am always eager to connect with like-minded professionals to take on new challenges that
+                shape the future of technology.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section className="work-experience container">
+          <h2>
+            <small>Recent</small>
+            Work Experience
+          </h2>
+          <div className="jobs">
+            <article>
+              <figure>
+                <div>
+                  <img src="./images/GrantAIde.jpg" alt="GrantAIde" width="100%" />
+                  <figcaption>GrantAIde</figcaption>
+                </div>
+              </figure>
+              <h3>AI/Machine Learning Scientist</h3>
+              <div>Jun 2024 - Aug 2024</div>
+              <p>
+                • Designed and developed AI models focusing on Natural Language Processing (NLP) for prompt-based learning and generation.
+                <br />
+                • Parameter-Efficient Fine-Tuning (PEFT) techniques to optimize AI model performance.
+                <br />
+                • Developed an end-to-end multi-tenancy Retrieval-Augmented Generation (RAG) pipeline to enhance information retrieval and text
+                generation using Langchain, FAISS vector database, Google Cloud Storage, and Google Cloud Functions.
+                <br />
+                • Implemented Google Analytics Tags using Google Tag Manager, Custom Events, and Triggers.
+              </p>
+            </article>
+            <article>
+              <figure>
+                <div>
+                  <img src="./images/urmc.png" alt="University of Rochester Medical Center" width="100%" />
+                  <figcaption>University of Rochester Medical Center</figcaption>
+                </div>
+              </figure>
+              <h3>Research Assistant</h3>
+              <div>Mar 2024- Present</div>
+              <p>
+                • Working with NIH data for N3C datasets with PySpark on characterization of Long Covid.
+                <br />
+                • Working with NIH datasets for N3C on Mental Health characterization of Long Covid.
+              </p>
+            </article>
+            <article>
+              <figure>
+                <div>
+                  <img src="./images/siemens.jpg" alt="Siemens Healthineers" width="100%" />
+                  <figcaption>Siemens Healthineers</figcaption>
+                </div>
+              </figure>
+              <h3>Research and Software Developer I</h3>
+              <div>Jan 2022 - Jul 2023</div>
+              <p>
+                • Enhanced AI-driven healthcare solutions by 20% through collaboration with diverse teams, resulting in improved patient care.
+                <br />
+                • Improved build analysis, reducing failed builds by 30% and preventing dead tests, boosting cardiovascular team productivity.
+                <br />
+                • Improved CI/CD processes, resulting in a 20% reduction in staging build failures, ensuring a more stable development environment
+                within 4 months.
+              </p>
+            </article>
+          </div>
+        </section>
+        <section id="projects" className="bento">
+          <h2>
+            <small>Previous</small>
+            Completed Projects
+          </h2>
+          <div className="bento-grid">
+            <a href="#" className="bento-item">
+              <img src="./images/Biology.png" alt="Prediction of Biological Age" width="100%" />
+            </a>
+            <a href="#" className="bento-item">
+              <img src="./images/US.png" alt="" width="100%" />
+            </a>
+            <a href="#" className="bento-item">
+              <img src="./images/uofr.png" alt="" width="100%" />
+            </a>
+            <a href="#" className="bento-item">
+              <img src="./images/war.png" alt="" width="100%" />
+            </a>
+            <a href="#" className="bento-item">
+              <img src="./images/car.png" alt="" width="100%" />
+            </a>
+            <a href="#" className="bento-item">
+              <img src="./images/seg.png" alt="" width="100%" />
+            </a>
+          </div>
+        </section>
+        <section className="logos container">
+          <div className="marquee">
+            <div className="track">
+              <img src="./images/python.png" alt="Python" width="128" />
+              <img src="./images/c__.png" alt="C++" width="128" />
+              <img src="./images/R.jpg" alt="R" width="128" />
+              <img src="./images/tensorflow.png" alt="TensorFlow" width="128" />
+              <img src="./images/pyTorch.png" alt="PyTorch" width="128" />
+              <img src="./images/huggingface.png" alt="Hugging Face" width="128" />
+              <img src="./images/gemeni.jpg" alt="Google Gemini" width="128" />
+              <img src="./images/transformer.png" alt="Transformers" width="128" />
+              <img src="./images/firebase.png" alt="Firebase" width="128" />
+              <img src="./images/openAI.png" alt="OpenAI" width="128" />
+              <img src="./images/openCV.png" alt="OpenCV" width="128" />
+              <img src="./images/download.jpg" alt="Langchain" width="128" />
+              <img src="./images/pyspark.png" alt="PySpark" width="128" />
+              <img src="./images/pandas.png" alt="Pandas" width="128" />
+              <img src="./images/matplotlib.png" alt="Matplotlib" width="128" />
+              <img src="./images/numPY.png" alt="NumPy" width="128" />
+              <img src="./images/scikitlearn.png" alt="Scikit-learn" width="128" />
+              <img src="./images/anaconda.png" alt="Anaconda" width="128" />
+              <img src="./images/aws_cloud.png" alt="Amazon AWS Cloud" width="128" />
+              <img src="./images/databricks.png" alt="Databricks" width="128" />
+              <img src="./images/flask.png" alt="Flask" width="128" />
+              <img src="./images/qgis.jpg" alt="QGIS" width="128" />
+            </div>
+          </div>
+        </section>
+        <section className="chatbot container">
+          <h2>
+            <small>Talk To Me</small>
+            Let's Chat
+          </h2>
+          <div className="chatbot-blue">
+            <div className="chat-info">
+              <h3>AI Chatbot</h3>
+              <p>
+                I've put together a chatbot here which knows all my skills, work experience, and has a copy of my CV/Resume. You can use it to ask
+                questions about me to get a better idea of who I am and what I've done.
+              </p>
+              <p>
+                You can also download my resume here if you want to take a look at it. I'm currently looking for new opportunities so if you have a
+                project you think I'd be a good fit for, please get in touch!
+              </p>
+              <a href="./onePageFinalsummer.pdf" className="button black">Download Resume</a>
+            </div>
+            <div className="chat-box">
+              <div className="scroll-area">
+                <ul id="chat-log">
+                  <li>
+                    <span className="avatar bot">AI</span>
+                    <div className="message">
+                      <p>
+                        Hi, I'm Anik De, a Data Scientist with expertise in AI, deep learning, and data analysis. How can I help you today?
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <span className="avatar user">User</span>
+                    <div className="message">
+                      <p>
+                        Hi Anik, I'm interested in learning more about your experience with AI and machine learning. Can you tell me more about your
+                        projects?
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div className="chat-message">
+                <input type="text" placeholder="Type your message here" />
+                <button className="button black">Send</button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </>
+  );
+}
