@@ -608,7 +608,7 @@ h3 {
             align-items: center;
             gap: 15px;
 
-            &:nth-child(even) {
+            &.user {
               text-align: right;
               justify-content: flex-end;
               flex-direction: row-reverse;

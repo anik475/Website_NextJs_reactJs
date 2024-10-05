@@ -1,9 +1,70 @@
 "use client";
 import Image from "next/image";
 import { useState } from "react";
+import MarkdownRenderer from './components/MarkdownRenderer';
 
 export default function Home() {
-const [menuOpen, setMenuOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [messageInput, setMessageInput] = useState('');
+
+  const [messages, setMessages] = useState([
+    {
+      role: 'assistant',
+      content: 'How can I help you learn more about Anik and his Resume?'
+    }
+  ]);
+
+  const submitForm = async (e) => {
+    e.preventDefault();
+    let newMessages = [...messages, { role: 'user', content: messageInput }]
+    setMessages(newMessages);
+    setMessageInput('');
+    const apiMessage = await fetch(
+      '/api',
+      {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ messages: newMessages })
+      }
+    ).then(res => res.json());
+    setMessages([...newMessages, { role: 'assistant', content: apiMessage.message }]);
+  }
+
+  // const submitForm = async (e) => {
+  //   e.preventDefault();
+  
+  //   // Add the user's input to the message history
+  //   let newMessages = [...messages, { role: 'user', content: messageInput }];
+  //   setMessages(newMessages);
+  //   setMessageInput(''); // Clear input field
+  
+  //   try {
+  //     // Make the API request
+  //     const response = await fetch('/api', {
+  //       method: 'POST',
+  //       headers: {
+  //         'Content-Type': 'application/json',
+  //       },
+  //       body: JSON.stringify({ messages: newMessages }),
+  //     });
+  
+  //     // Check if the response is successful
+  //     if (!response.ok) {
+  //       throw new Error(`HTTP error! status: ${response.status}`);
+  //     }
+  
+  //     // Parse the JSON response from the server
+  //     const apiMessage = await response.json();
+  
+  //     // Update messages with the assistant's response
+  //     setMessages([...newMessages, { role: 'assistant', content: apiMessage.message }]);
+  //   } catch (error) {
+  //     console.error('Error submitting form:', error);
+  //     // Optionally, you can set an error message in the UI here
+  //   }
+  // };
 
   const toggleMobileMenu = () => {
     setMenuOpen(!menuOpen);
@@ -255,29 +316,21 @@ const [menuOpen, setMenuOpen] = useState(false);
             <div className="chat-box">
               <div className="scroll-area">
                 <ul id="chat-log">
-                  <li>
-                    <span className="avatar bot">AI</span>
-                    <div className="message">
-                      <p>
-                        Hi, I'm Anik De, a Data Scientist with expertise in AI, deep learning, and data analysis. How can I help you today?
-                      </p>
-                    </div>
-                  </li>
-                  <li>
-                    <span className="avatar user">User</span>
-                    <div className="message">
-                      <p>
-                        Hi Anik, I'm interested in learning more about your experience with AI and machine learning. Can you tell me more about your
-                        projects?
-                      </p>
-                    </div>
-                  </li>
+                  {messages.map((message, index) => (
+                    <li key={index} className={`${message.role}`}>
+                      <span className={`avatar`}>{message.role === 'user' ? 'You' : 'AI'}</span>
+                      <div className="message">
+                        {/* Render Markdown content */}
+                        <MarkdownRenderer content={message.content} />
+                      </div>
+                    </li>
+                  ))}
                 </ul>
               </div>
-              <div className="chat-message">
-                <input type="text" placeholder="Type your message here" />
+              <form onSubmit={submitForm} className="chat-message">
+                <input type="text" placeholder="Hey Anik, what skills are you best at?" value={messageInput} onChange={e => setMessageInput(e.target.value)} />
                 <button className="button black">Send</button>
-              </div>
+              </form>
             </div>
           </div>
         </section>
