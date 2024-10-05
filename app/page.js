@@ -180,6 +180,45 @@ export default function Home() {
             </div>
           </div>
         </section>
+        <section className="chatbot container">
+          <h2>
+            <small>Talk To Me</small>
+            Let's Chat
+          </h2>
+          <div className="chatbot-blue">
+            <div className="chat-info">
+              <h3>AI Chatbot</h3>
+              <p>
+                I've put together a chatbot here which knows all my skills, work experience, and has a copy of my CV/Resume. You can use it to ask
+                questions about me to get a better idea of who I am and what I've done.
+              </p>
+              <p>
+                You can also download my resume here if you want to take a look at it. I'm currently looking for new opportunities so if you have a
+                project you think I'd be a good fit for, please get in touch!
+              </p>
+              <a href="./onePageFinalsummer.pdf" className="button black">Download Resume</a>
+            </div>
+            <div className="chat-box">
+              <div className="scroll-area">
+                <ul id="chat-log">
+                  {messages.map((message, index) => (
+                    <li key={index} className={`${message.role}`}>
+                      <span className={`avatar`}>{message.role === 'user' ? 'You' : 'AI'}</span>
+                      <div className="message">
+                        {/* Render Markdown content */}
+                        <MarkdownRenderer content={message.content} />
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <form onSubmit={submitForm} className="chat-message">
+                <input type="text" placeholder="Hey Anik, what skills are you best at?" value={messageInput} onChange={e => setMessageInput(e.target.value)} />
+                <button className="button black">Send</button>
+              </form>
+            </div>
+          </div>
+        </section>
         <section className="work-experience container">
           <h2>
             <small>Recent</small>
@@ -247,23 +286,23 @@ export default function Home() {
             Completed Projects
           </h2>
           <div className="bento-grid">
-            <a href="#" className="bento-item">
-              <img src="./images/Biology.png" alt="Prediction of Biological Age" width="100%" />
+            <a href="https://github.com/marv950819/BrainAge3DCNN" className="bento-item">
+              <img src="./images/bio1.png" alt="Prediction of Biological Age" width="100%" />
+            </a>
+            <a href="https://github.com/anik475/Website_NextJs_reactJs" className="bento-item">
+              <img src="./images/web.png" alt="Portfolio Website using NextJs" width="100%" />
+            </a>
+            <a href="https://github.com/anik475/Statistics-Project-Study-Of-Applicants-Applying-for-master-s-and-PhD-Program-at-U-of-R" className="bento-item">
+              <img src="./images/uofr2.png" alt="Study Of Applicants Applying for master's and PhD Program at University of Rochester" width="100%" />
             </a>
             <a href="#" className="bento-item">
-              <img src="./images/US.png" alt="" width="100%" />
+              <img src="./images/chip.png" alt="" width="100%" />
             </a>
-            <a href="#" className="bento-item">
-              <img src="./images/uofr.png" alt="" width="100%" />
+            <a href="https://github.com/anik475/Covid-19-CT-Lungs-Segmentation-Using-Attention-U-Net" className="bento-item">
+              <img src="./images/lung.png" alt="Covid-19 CT Lungs Segmentation Using Attention UNet" width="100%" />
             </a>
-            <a href="#" className="bento-item">
-              <img src="./images/war.png" alt="" width="100%" />
-            </a>
-            <a href="#" className="bento-item">
-              <img src="./images/car.png" alt="" width="100%" />
-            </a>
-            <a href="#" className="bento-item">
-              <img src="./images/seg.png" alt="" width="100%" />
+            <a href="https://github.com/anik475/Vission-Transformer-for-Image-Segemntion-using-UNET-R" className="bento-item">
+              <img src="./images/lung2.png" alt="Image Segmentation Using UNET-R" width="100%" />
             </a>
           </div>
         </section>
@@ -292,45 +331,6 @@ export default function Home() {
               <img src="./images/databricks.png" alt="Databricks" width="128" />
               <img src="./images/flask.png" alt="Flask" width="128" />
               <img src="./images/qgis.jpg" alt="QGIS" width="128" />
-            </div>
-          </div>
-        </section>
-        <section className="chatbot container">
-          <h2>
-            <small>Talk To Me</small>
-            Let's Chat
-          </h2>
-          <div className="chatbot-blue">
-            <div className="chat-info">
-              <h3>AI Chatbot</h3>
-              <p>
-                I've put together a chatbot here which knows all my skills, work experience, and has a copy of my CV/Resume. You can use it to ask
-                questions about me to get a better idea of who I am and what I've done.
-              </p>
-              <p>
-                You can also download my resume here if you want to take a look at it. I'm currently looking for new opportunities so if you have a
-                project you think I'd be a good fit for, please get in touch!
-              </p>
-              <a href="./onePageFinalsummer.pdf" className="button black">Download Resume</a>
-            </div>
-            <div className="chat-box">
-              <div className="scroll-area">
-                <ul id="chat-log">
-                  {messages.map((message, index) => (
-                    <li key={index} className={`${message.role}`}>
-                      <span className={`avatar`}>{message.role === 'user' ? 'You' : 'AI'}</span>
-                      <div className="message">
-                        {/* Render Markdown content */}
-                        <MarkdownRenderer content={message.content} />
-                      </div>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <form onSubmit={submitForm} className="chat-message">
-                <input type="text" placeholder="Hey Anik, what skills are you best at?" value={messageInput} onChange={e => setMessageInput(e.target.value)} />
-                <button className="button black">Send</button>
-              </form>
             </div>
           </div>
         </section>
