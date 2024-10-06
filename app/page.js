@@ -160,7 +160,7 @@ export default function Home() {
             <div className="right-column">
               <h3>A bit about me</h3>
               <p>
-                A dedicated Data Scientist currently pursuing Master's degree in Data Science from the University of Rochester who is always looking for innovative ideas related to tech.
+                A dedicated Machine Learning Engineer currently pursuing Master's degree in Data Science from the University of Rochester who is always looking for innovative ideas related to tech.
                 My journey in technology is driven by a passion for solving complex problems with data-driven insights. With a strong foundation in AI,
                 machine learning, and deep learning, I specialize in developing scalable architectures and innovative algorithms. My experience spans
                 multiple domains, including healthcare and geospatial analysis, where I've successfully applied my technical expertise to real-world
