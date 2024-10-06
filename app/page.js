@@ -176,6 +176,34 @@ export default function Home() {
             </div>
           </div>
         </section>
+        <section className="logos container">
+          <div className="marquee">
+            <div className="track">
+              <img src="./images/python.png" alt="Python" width="128" />
+              <img src="./images/c__.png" alt="C++" width="128" />
+              <img src="./images/R.jpg" alt="R" width="128" />
+              <img src="./images/tensorflow.png" alt="TensorFlow" width="128" />
+              <img src="./images/pyTorch.png" alt="PyTorch" width="128" />
+              <img src="./images/huggingface.png" alt="Hugging Face" width="128" />
+              <img src="./images/gemeni.jpg" alt="Google Gemini" width="128" />
+              <img src="./images/Transformer.png" alt="Transformers" width="128" />
+              <img src="./images/firebase.png" alt="Firebase" width="128" />
+              <img src="./images/openAI.png" alt="OpenAI" width="128" />
+              <img src="./images/openCV.png" alt="OpenCV" width="128" />
+              <img src="./images/download.jpg" alt="Langchain" width="128" />
+              <img src="./images/pyspark.png" alt="PySpark" width="128" />
+              <img src="./images/pandas.png" alt="Pandas" width="128" />
+              <img src="./images/matplotlib.png" alt="Matplotlib" width="128" />
+              <img src="./images/numPY.png" alt="NumPy" width="128" />
+              <img src="./images/scikitlearn.png" alt="Scikit-learn" width="128" />
+              <img src="./images/anaconda.png" alt="Anaconda" width="128" />
+              <img src="./images/aws_cloud.png" alt="Amazon AWS Cloud" width="128" />
+              <img src="./images/databricks.png" alt="Databricks" width="128" />
+              <img src="./images/flask.png" alt="Flask" width="128" />
+              <img src="./images/qgis.jpg" alt="QGIS" width="128" />
+            </div>
+          </div>
+        </section>
         <section className="chatbot container">
           <h2>
             <small>Talk To Me</small>
@@ -215,6 +243,7 @@ export default function Home() {
             </div>
           </div>
         </section>
+        
         <section className="work-experience container">
           <h2>
             <small>Recent</small>
@@ -306,34 +335,6 @@ export default function Home() {
               <img src="./images/lung2.png" alt="Image Segmentation Using UNET-R" width="100%" />
               <figcaption>Image Segmentation Using UNET-R</figcaption>
             </a>
-          </div>
-        </section>
-        <section className="logos container">
-          <div className="marquee">
-            <div className="track">
-              <img src="./images/python.png" alt="Python" width="128" />
-              <img src="./images/c__.png" alt="C++" width="128" />
-              <img src="./images/R.jpg" alt="R" width="128" />
-              <img src="./images/tensorflow.png" alt="TensorFlow" width="128" />
-              <img src="./images/pyTorch.png" alt="PyTorch" width="128" />
-              <img src="./images/huggingface.png" alt="Hugging Face" width="128" />
-              <img src="./images/gemeni.jpg" alt="Google Gemini" width="128" />
-              <img src="./images/Transformer.png" alt="Transformers" width="128" />
-              <img src="./images/firebase.png" alt="Firebase" width="128" />
-              <img src="./images/openAI.png" alt="OpenAI" width="128" />
-              <img src="./images/openCV.png" alt="OpenCV" width="128" />
-              <img src="./images/download.jpg" alt="Langchain" width="128" />
-              <img src="./images/pyspark.png" alt="PySpark" width="128" />
-              <img src="./images/pandas.png" alt="Pandas" width="128" />
-              <img src="./images/matplotlib.png" alt="Matplotlib" width="128" />
-              <img src="./images/numPY.png" alt="NumPy" width="128" />
-              <img src="./images/scikitlearn.png" alt="Scikit-learn" width="128" />
-              <img src="./images/anaconda.png" alt="Anaconda" width="128" />
-              <img src="./images/aws_cloud.png" alt="Amazon AWS Cloud" width="128" />
-              <img src="./images/databricks.png" alt="Databricks" width="128" />
-              <img src="./images/flask.png" alt="Flask" width="128" />
-              <img src="./images/qgis.jpg" alt="QGIS" width="128" />
-            </div>
           </div>
         </section>
       </main>
