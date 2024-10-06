@@ -468,8 +468,8 @@ h3 {
     } */
 
     @media(max-width: 1024px) {
-      grid-template-columns: repeat(1, 1fr); /* 2 columns for iPads */
-      grid-template-rows: auto; /* Automatically adjust row height */
+      display: flex;
+      flex-direction: column;
       gap: 30px;
       height: auto;
   }
@@ -522,9 +522,10 @@ h3 {
         }
       }
 
-      @media(max-width:768px) {
+      @media(max-width:1024px) {
         height: 240px;
       }
+      
 
       &:nth-child(1) {
         grid-column: span 2;
