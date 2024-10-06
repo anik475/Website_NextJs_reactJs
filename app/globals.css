@@ -489,6 +489,20 @@ h3 {
         object-fit: cover;
         transition: ease 3s all;
       }
+      
+      figcaption {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: var(--base-100);
+        text-align: center;
+        padding: 10px;
+        opacity: 0;
+        visibility: hidden;
+        transition: ease 0.3s all;
+      }
 
       &:hover {
         img {
