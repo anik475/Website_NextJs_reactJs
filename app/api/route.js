@@ -50,7 +50,7 @@ export async function POST(req) {
         console.log("Latest user message:", latestMessage);
 
         // Fetching data from Flask backend, passing only the latest message
-        const flaskResponse = await fetch('https://throbbing-leaf-0915.ploomberapp.io/aiapp', {
+        const flaskResponse = await fetch('https://agreeable-suzy-anikportfolio-f0c83459.koyeb.app/aiapp', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
