@@ -463,9 +463,17 @@ h3 {
     grid-template-rows: repeat(4, 1fr);
     height: 960px;
 
-    @media(max-width:1024px) {
+    /* @media(max-width:1024px) {
       grid-template-rows: repeat(8, 1fr);
-    }
+    } */
+
+    @media(max-width: 1024px) {
+    .bento-grid {
+      grid-template-columns: repeat(2, 1fr); /* Display 2 columns */
+      grid-template-rows: auto;
+      gap: 20px; /* Optional: Adjust gap between items */
+     }
+  }
 
     @media(max-width:768px) {
       display: flex;

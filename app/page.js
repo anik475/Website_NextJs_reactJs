@@ -104,7 +104,7 @@ export default function Home() {
             <h1>
               <small>Hello, I'm</small>
               Anik De
-              <small>Data Scientist crafting AI-driven solutions</small>
+              <small>An Engineer crafting AI-driven solutions</small>
             </h1>
             <p>
               Data Science Master's student at the University of Rochester, specializing in AI, deep learning, and natural language processing.
