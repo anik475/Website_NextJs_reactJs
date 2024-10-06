@@ -322,7 +322,7 @@ export default function Home() {
               <img src="./images/pyTorch.png" alt="PyTorch" width="128" />
               <img src="./images/huggingface.png" alt="Hugging Face" width="128" />
               <img src="./images/gemeni.jpg" alt="Google Gemini" width="128" />
-              <img src="./images/transformer.png" alt="Transformers" width="128" />
+              <img src="./images/Transformer.png" alt="Transformers" width="128" />
               <img src="./images/firebase.png" alt="Firebase" width="128" />
               <img src="./images/openAI.png" alt="OpenAI" width="128" />
               <img src="./images/openCV.png" alt="OpenCV" width="128" />
