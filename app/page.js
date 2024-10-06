@@ -296,7 +296,7 @@ export default function Home() {
             </a>
             <a href="https://github.com/anik475/Realtime_Tweet_Sentiment_Analysis" className="bento-item">
               <img src="./images/chip.png" alt="Realtime Top 10 Positive and Negative Tweet Mentions using Sentiment Analysis" width="100%" />
-              <figcaption>"Positive and Negative Tweet Mentions using Sentiment Analysis"</figcaption>
+              <figcaption>Positive and Negative Tweet Mentions using Sentiment Analysis</figcaption>
             </a>
             <a href="https://github.com/anik475/Covid-19-CT-Lungs-Segmentation-Using-Attention-U-Net" className="bento-item">
               <img src="./images/lung.png" alt="Covid-19 CT Lungs Segmentation Using Attention UNet" width="100%" />
