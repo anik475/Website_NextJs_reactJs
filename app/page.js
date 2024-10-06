@@ -104,14 +104,14 @@ export default function Home() {
             <h1>
               <small>Hello, I'm</small>
               Anik De
-              Data Scientist crafting AI-driven solutions
+              <small>Data Scientist crafting AI-driven solutions</small>
             </h1>
             <p>
               Data Science Master's student at the University of Rochester, specializing in AI, deep learning, and natural language processing.
               <span>
               I am passionate about building scalable architectures from scratch, integrating Retrieval-Augmented Generation (RAG) pipelines, and leveraging advanced LLMs like GPT-4 and Google Gemini to solve real-world problems
               </span>{" "}
-              I have a strong background in healthcare AI and geospatial analysis, and I love applying cutting-edge technologies to impact industries that matter.            
+              I have a strong background in healthcare AI and geospatial analysis, and I love applying cutting-edge technologies to impact industries.            
               </p>
             <div className="call-to-action">
               <a href="./onePageFinalsummer.pdf" className="button black">View Resume</a>
@@ -294,9 +294,9 @@ export default function Home() {
               <img src="./images/uofr2.png" alt="Study Of Applicants Applying for master's and PhD Program at University of Rochester" width="100%" />
               <figcaption>Study Of Applicants Applying for master's and PhD Program at University of Rochester</figcaption>
             </a>
-            <a href="#" className="bento-item">
-              <img src="./images/chip.png" alt="" width="100%" />
-              <figcaption>""</figcaption>
+            <a href="https://github.com/anik475/Realtime_Tweet_Sentiment_Analysis" className="bento-item">
+              <img src="./images/chip.png" alt="Realtime Top 10 Positive and Negative Tweet Mentions using Sentiment Analysis" width="100%" />
+              <figcaption>"Positive and Negative Tweet Mentions using Sentiment Analysis"</figcaption>
             </a>
             <a href="https://github.com/anik475/Covid-19-CT-Lungs-Segmentation-Using-Attention-U-Net" className="bento-item">
               <img src="./images/lung.png" alt="Covid-19 CT Lungs Segmentation Using Attention UNet" width="100%" />
