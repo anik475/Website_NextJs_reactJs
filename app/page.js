@@ -91,12 +91,10 @@ export default function Home() {
                         <a href="mailto:anikde475@gmail.com" className="button">Contact Me</a> 
                     </li>
                 </ul>
-                <a href="#" className="mobile-toogle" onclick={toggleMobileMenu}>
-                    <svg className="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
-                        height="24" fill="none" viewBox="0 0 24 24">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h10" />
+                <a href="#" className="mobile-toggle" onclick={toggleMobileMenu}>
+                    <svg className="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                      <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h10" />
                     </svg>
-
                 </a>
             </nav>
         </header>
@@ -106,16 +104,15 @@ export default function Home() {
             <h1>
               <small>Hello, I'm</small>
               Anik De
+              Data Scientist crafting AI-driven solutions
             </h1>
             <p>
-              Master's student in Data Science at the University of Rochester with expertise in AI, deep learning, and data analysis.
+              Data Science Master's student at the University of Rochester, specializing in AI, deep learning, and natural language processing.
               <span>
-                Experienced in implementing Retrieval-Augmented Generation (RAG) pipelines, designing scalable architectures, and
-                integrating advanced LLMs like GPT-4 and Google Gemini.
+              I am passionate about building scalable architectures from scratch, integrating Retrieval-Augmented Generation (RAG) pipelines, and leveraging advanced LLMs like GPT-4 and Google Gemini to solve real-world problems
               </span>{" "}
-              Passionate about applying cutting-edge technologies to real-world problems, with a strong background in healthcare AI and
-              geospatial analysis.
-            </p>
+              I have a strong background in healthcare AI and geospatial analysis, and I love applying cutting-edge technologies to impact industries that matter.            
+              </p>
             <div className="call-to-action">
               <a href="./onePageFinalsummer.pdf" className="button black">View Resume</a>
               <a href="mailto:anikde475@gmail.com" className="button white">Contact Me</a>
@@ -163,19 +160,18 @@ export default function Home() {
             <div className="right-column">
               <h3>A bit about me</h3>
               <p>
-                I am Anik De, a dedicated Data Scientist currently pursuing my Master's degree in Data Science at the University of Rochester. My
-                journey in technology is driven by a passion for solving complex problems with data-driven insights. With a strong foundation in AI,
+                A dedicated Data Scientist currently pursuing Master's degree in Data Science from the University of Rochester who is always looking for innovative ideas related to tech.
+                My journey in technology is driven by a passion for solving complex problems with data-driven insights. With a strong foundation in AI,
                 machine learning, and deep learning, I specialize in developing scalable architectures and innovative algorithms. My experience spans
                 multiple domains, including healthcare and geospatial analysis, where I've successfully applied my technical expertise to real-world
                 challenges. Notably, I've worked on enhancing AI-driven healthcare solutions and implementing sophisticated Retrieval-Augmented
                 Generation (RAG) systems, consistently delivering impactful results.
               </p>
               <p>
-                Beyond my technical skills, I am deeply committed to the ethical and innovative application of AI. I thrive in collaborative
-                environments, where I can work alongside multidisciplinary teams to push the boundaries of what's possible. I am always exploring the
-                latest advancements in AI, contributing to open-source projects, and sharing my knowledge with the community. My goal is to use
-                technology to create meaningful impact, and I am always eager to connect with like-minded professionals to take on new challenges that
-                shape the future of technology.
+                Beyond my technical skills, I am a passionate guy who loves everything about technology—whether it is coding or creating something from scratch. 
+                I am constantly thinking of innovative solutions to problems. Outside of tech, I enjoy building intricate Lego sets, playing guitar, soccer, and listening to music. 
+                I am fascinated by scientific discoveries, especially about outer space, and I love watching sci-fi movies. 
+                I am also a big fan of AC/DC, and their music fuels my creativity and passion.
               </p>
             </div>
           </div>
