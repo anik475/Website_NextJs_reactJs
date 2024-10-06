@@ -288,21 +288,27 @@ export default function Home() {
           <div className="bento-grid">
             <a href="https://github.com/marv950819/BrainAge3DCNN" className="bento-item">
               <img src="./images/bio1.png" alt="Prediction of Biological Age" width="100%" />
+              <figcaption>Prediction of Biological Age</figcaption>
             </a>
             <a href="https://github.com/anik475/Website_NextJs_reactJs" className="bento-item">
               <img src="./images/web.png" alt="Portfolio Website using NextJs" width="100%" />
+              <figcaption>Portfolio Website using NextJs</figcaption>
             </a>
             <a href="https://github.com/anik475/Statistics-Project-Study-Of-Applicants-Applying-for-master-s-and-PhD-Program-at-U-of-R" className="bento-item">
               <img src="./images/uofr2.png" alt="Study Of Applicants Applying for master's and PhD Program at University of Rochester" width="100%" />
+              <figcaption>Study Of Applicants Applying for master's and PhD Program at University of Rochester</figcaption>
             </a>
             <a href="#" className="bento-item">
               <img src="./images/chip.png" alt="" width="100%" />
+              <figcaption>""</figcaption>
             </a>
             <a href="https://github.com/anik475/Covid-19-CT-Lungs-Segmentation-Using-Attention-U-Net" className="bento-item">
               <img src="./images/lung.png" alt="Covid-19 CT Lungs Segmentation Using Attention UNet" width="100%" />
+              <figcaption>Covid-19 CT Lungs Segmentation Using Attention UNet</figcaption>
             </a>
             <a href="https://github.com/anik475/Vission-Transformer-for-Image-Segemntion-using-UNET-R" className="bento-item">
               <img src="./images/lung2.png" alt="Image Segmentation Using UNET-R" width="100%" />
+              <figcaption>Image Segmentation Using UNET-R</figcaption>
             </a>
           </div>
         </section>
