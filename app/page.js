@@ -209,6 +209,7 @@ export default function Home() {
             <small>Talk To Me</small>
             Let's Chat
           </h2>
+          <h3>Disclaimer: Please note that this chatbot is hosted on a free hosting service, which may result in occasional interruptions or the inability to process certain requests. Response times and availability may vary, and some features might not function due to hosting limitations. We appreciate your understanding and patience. </h3>
           <div className="chatbot-blue">
             <div className="chat-info">
               <h3>AI Chatbot</h3>
